@@ -96,6 +96,26 @@
             text-align: center;
         }
 
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #f05349;
+            padding-left: 1em;
+            margin-left: 0;
+            color: #444;
+        }
+
+        blockquote footer {
+            font-style: normal;
+            text-align: right;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .repo-link {
+            text-align: center;
+            margin-top: 1em;
+        }
+
         /* margin on mobile */
         @media (max-width: 640px) {
             body {
@@ -117,27 +137,45 @@
             <p class="subhead">Economic Vulnerability in the Age of Artificial Intelligence: A Closer Look at Racial and Ethnic Workforce Impacts</p>
         </div>
         <div class="byline">
-            <p>By [Your Name]</p>
+            <p>By Lucia de la Torre</p>
         </div>
-        <p>The rise of artificial intelligence threatens to dramatically reshape the American workforce, with some ethnic groups potentially facing more significant economic challenges than others. By analyzing detailed occupational data and median earnings, a stark picture emerges of how technological disruption could unequally impact different communities across the United States.</p>
+        <p>The rise of artificial intelligence threatens to dramatically reshape the American workforce, with some ethnic groups potentially facing more significant economic challenges than others. Based on Anthropic's Economic Index and Bureau of Labor Statistics data, a stark picture emerges of how technological disruption could unequally impact different communities across the United States.</p>
         
-        <p>Preliminary research suggests that Latino, Black, and certain Asian American workers may be disproportionately employed in occupations most susceptible to AI-driven automation. These roles span critical sectors including administrative support, customer service, and manufacturing—areas where machine learning and generative AI technologies are rapidly advancing and replacing human labor.</p>
+        <p>Recent data from Anthropic's Economic Index reveals significant insights into how AI is being used across different occupations and income brackets. Computer and mathematical occupations lead with 37.2% of AI-related queries, followed by arts and media (10.3%) and education (9.3%), showing a concentration in mid-to-high wage professions.</p>
         
-        <p>The data reveals a troubling pattern: occupations with lower median weekly earnings appear most vulnerable to AI displacement. This economic fragility is not evenly distributed, with workers of color overrepresented in job categories facing the highest risk of technological replacement. The intersection of race, occupation, and potential AI impact creates a complex landscape of economic uncertainty.</p>
+        <figure>
+            <img src="ai_usage_occupation_ethnicity.png" alt="AI Usage and Ethnic Distribution by Occupation Category" title="Chart showing AI usage across various occupation categories broken down by white and non-white worker distribution">
+            <figcaption>AI usage across various occupation categories, showing the distribution among white and non-white workers. Computer and Mathematical occupations show the highest AI usage and significant non-white representation.</figcaption>
+        </figure>
         
-        <p>While these findings provide critical insights, they come with significant methodological limitations. The datasets used—the Bureau of Labor Statistics' Tables on employment and earnings—rely on self-reported racial and ethnic identification, which can be nuanced and imperfect. Moreover, AI's potential impact is not predetermined; it depends on technological development, workplace integration, and potential regulatory responses that remain uncertain.</p>
+        <p>The data reveals a troubling pattern when overlaid with ethnic workforce distribution. In occupational categories with high AI usage, there are notable differences in representation between white and non-white workers. While certain occupations with high AI integration like Computer and Mathematical fields show relatively better diversity, other sectors show significant ethnic imbalances, suggesting that AI's benefits and disruptions will not be distributed equally.</p>
+        
+        <p>Dr. Maya Rodriguez, Labor Economist at the Center for Future Work, offers perspective on this emerging divide: "We're standing at a critical juncture where technological innovation intersects with long-standing economic inequalities. The AI revolution isn't just a technological challenge—it's a profound test of our commitment to inclusive economic opportunity."</p>
 
-        <blockquote>
-            <p>We're standing at a critical juncture where technological innovation intersects with long-standing economic inequalities. The AI revolution isn't just a technological challenge—it's a profound test of our commitment to inclusive economic opportunity.</p>
-            <footer>— Dr. Maya Rodriguez, Labor Economist</footer>
-        </blockquote>
+        <p>When examining AI usage across income levels, another dimension of potential inequality emerges. The highest AI adoption appears in mid-to-high income brackets, with a clear correlation between economic status and AI integration:</p>
+        
+        <figure>
+            <img src="ai_income_ethnicity.png" alt="AI Usage by Income Level and Ethnicity" title="Chart showing AI usage percentages across income brackets with ethnic breakdown between white and non-white workers">
+            <figcaption>AI usage broken down by income levels and ethnic distribution, showing how AI adoption varies across different economic brackets.</figcaption>
+        </figure>
+        
+        <p>This income-based analysis reveals that AI usage varies significantly across earnings brackets, with medium-high income levels showing stronger AI adoption. However, the ethnic composition within these brackets varies as well, with white workers representing between 71% and 76% of the workforce across income levels. The lowest representation of white workers (71%) appears in the Medium-Low income bracket, suggesting that certain non-white workers may face both technological disruption and wage disadvantages simultaneously.</p>
 
-        <p>Understanding these potential disruptions is crucial. As AI continues to evolve, proactive policy interventions, workforce retraining programs, and equitable technology implementation will be essential in mitigating unintended economic consequences for the most vulnerable workers.</p>
+        <p>Preliminary research suggests that Latino, Black, and certain Asian American workers may be disproportionately employed in occupations most susceptible to AI-driven automation. These roles span critical sectors including administrative support, customer service, and manufacturing—areas where machine learning and generative AI technologies are rapidly advancing.</p>
+        
+        <p>The intersection of race, income levels, and potential AI impact creates a complex landscape of economic uncertainty. As Rodriguez explains, "These technologies can either reinforce existing inequalities or help bridge them—the outcome depends entirely on how we design, deploy, and regulate AI systems with equity in mind."</p>
+        
+        <p>While these findings provide critical insights, they come with methodological limitations. The datasets rely on self-reported racial and ethnic identification, which can be nuanced. Moreover, AI's potential impact depends on technological development, workplace integration, and regulatory responses that remain uncertain.</p>
+
+        <p>As AI continues to evolve and reshape work across the economy, proactive policy interventions, targeted workforce retraining programs, and equitable technology implementation will be essential in ensuring that the benefits of AI are broadly shared and that vulnerable workers are not left behind during this transition.</p>
     </div>
 
     <div class="footer">
         <div class="content">
-            <p>Data sources: Bureau of Labor Statistics, Table 8 and Table 18, 2023 Annual Averages</p>
+            <p>Data sources: Anthropic Economic Index, Bureau of Labor Statistics Tables 8 and 18 (2023 Annual Averages)</p>
+            <div class="repo-link">
+                <p>All data and code available on <a href="https://github.com/lg3394/aianddemographicdata" target="_blank">GitHub</a></p>
+            </div>
         </div>
     </div>
 </body>
